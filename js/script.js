@@ -38,5 +38,3 @@ function moveG(el, speed) {
     degree3 = 0.2;
   }
 }
-
-function background(el, speed) {}
