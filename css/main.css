@@ -1,15 +1,39 @@
-#container {
-  width: 100%;
-  height: 100%;
-  background-color: aqua;
-  position: relative;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#body,
-#head,
-#r_leg,
-#l_leg,
-#r_hand,
-#l_hand {
+body {
+  text-align: center;
+  background-color: rgba(135, 206, 235, 0.5);
+  overflow: hidden;
+}
+
+#buildings {
+  width: 300%;
+  height: 100%;
   position: absolute;
+  background-image: url(../images/Building3.png);
+  background-position: center;
+  background-repeat: repeat-x;
+  bottom: 0;
+  animation: b 20s linear infinite;
+}
+@keyframes b {
+  100% {
+    transform: translateX(-1000px);
+  }
+}
+
+#man {
+  width: 500px;
+  position: absolute;
+  left: 30vw;
+  bottom: -24vh;
+  z-index: 5;
+}
+
+#man svg {
+  width: 100%;
 }
