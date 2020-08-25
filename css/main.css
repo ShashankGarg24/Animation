@@ -6,7 +6,7 @@
 
 body {
   text-align: center;
-  background-color: rgba(135, 206, 235, 0.5);
+  background-color: rgba(49, 98, 138, 0.5);
   overflow: hidden;
 }
 
@@ -14,16 +14,27 @@ body {
   width: 300vw;
   height: 75vh;
   position: absolute;
-  background-image: url(../images/plane1.png);
+  background-image: url(../images/plane4.png);
   background-repeat: no-repeat;
-  top: 0;
+}
+#buildings {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/Building3.png);
+  background-repeat: repeat-x;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  bottom: 0;
 }
 
+/*
 #buildings {
-  width: 400vw;
+  width: 100vw;
   height: 100vh;
   position: absolute;
   background-image: url(../images/Building3.png);
+  background-repeat: repeat-x ;
   background-position: center;
   bottom: 0;
   animation: building 20s linear infinite;
@@ -34,7 +45,11 @@ body {
     transform: translateX(-1000px);
   }
 }
+*/
 
+button {
+  position: relative;
+}
 #man {
   width: 500px;
   position: relative;

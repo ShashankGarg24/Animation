@@ -1,6 +1,15 @@
 var degree1 = 0;
 var looper;
 
+var i = 0;
+
+function move_bg() {
+  i--;
+  var bg = document.getElementById("buildings");
+  bg.style.backgroundPosition = i + "px";
+}
+setInterval(move_bg, 20);
+
 function rotateR(el, speed) {
   var right_leg = document.getElementById(el);
   right_leg.style.transitionDelay = "0.1s";
@@ -37,4 +46,15 @@ function moveG(el, speed) {
   if (degree3 < -0.4) {
     degree3 = 0.2;
   }
+}
+
+function day() {
+  document.body.style.backgroundColor = "rgba(248, 197, 103, 0.7)";
+  document.getElementById("buildings").style.backgroundImage =
+    "url(../images/Building3.png)";
+}
+function night() {
+  document.body.style.backgroundColor = "rgb(14, 21, 65)";
+  document.getElementById("buildings").style.backgroundImage =
+    "url(../images/Building4.png)";
 }
