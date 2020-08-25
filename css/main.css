@@ -11,12 +11,12 @@ body {
 }
 
 #buildings {
-  width: 300%;
-  height: 100%;
+  width: 400vw;
+  height: 100vh;
   position: absolute;
   background-image: url(../images/Building3.png);
   background-position: center;
-  background-repeat: repeat-x;
+
   bottom: 0;
   animation: b 20s linear infinite;
 }
@@ -28,7 +28,7 @@ body {
 
 #man {
   width: 500px;
-  position: absolute;
+  position: relative;
   left: 30vw;
   bottom: -24vh;
   z-index: 5;

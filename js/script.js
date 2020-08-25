@@ -1,37 +1,33 @@
-var degree = 0;
+var degree1 = 0;
 var looper;
 
 function rotateR(el, speed) {
   var right_leg = document.getElementById(el);
   right_leg.style.transitionDelay = "0.1s";
-  right_leg.style.transform = "rotate(" + degree + "deg)";
-  right_leg.style.transformOrigin = "240 500";
+  right_leg.style.transform = "rotate(" + degree1 + "deg)";
 
   looper = setTimeout("rotateR('" + el + "'," + speed + ")", speed);
-  degree++;
-  if (degree > 3) {
-    degree = 0.5;
+  degree1++;
+  if (degree1 > 1) {
+    degree1 = -3;
   }
 }
 
 var degree2 = 0;
-var looper2;
 
 function rotateL(el, speed) {
   var left_leg = document.getElementById(el);
-
   left_leg.style.transform = "rotate(" + degree2 + "deg)";
-  left_leg.style.transformOrigin = "240 500";
 
   looper2 = setTimeout("rotateL('" + el + "'," + speed + ")", speed);
   degree2--;
-  if (degree2 < -2) {
-    degree2 = 2;
+  if (degree2 < -1) {
+    degree2 = 3;
   }
 }
 
 var degree3 = 0;
-var looper3;
+
 function moveG(el, speed) {
   var goggles = document.getElementById(el);
 
@@ -42,3 +38,5 @@ function moveG(el, speed) {
     degree3 = 0.2;
   }
 }
+
+function background(el, speed) {}
