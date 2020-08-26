@@ -37,7 +37,7 @@ button {
 }
 #man {
   width: 500px;
-  position: relative;
+  position: absolute;
   left: 30vw;
   bottom: -24vh;
   z-index: 5;

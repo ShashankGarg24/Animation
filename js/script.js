@@ -11,14 +11,14 @@ setInterval(move_bg, 20);
 
 //right limbs
 var degree1 = 0;
-var loop;
+var loop1;
 
 function rotateR(el, speed) {
   var right_leg = document.getElementById(el);
   right_leg.style.transitionDelay = "0.1s";
   right_leg.style.transform = "rotate(" + degree1 + "deg)";
 
-  loop = setTimeout("rotateR('" + el + "'," + speed + ")", speed);
+  loop1 = setTimeout("rotateR('" + el + "'," + speed + ")", speed);
   degree1++;
   if (degree1 > 1) {
     degree1 = -3;
