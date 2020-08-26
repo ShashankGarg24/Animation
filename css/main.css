@@ -11,8 +11,8 @@ body {
 }
 
 #plane {
-  width: 300vw;
-  height: 75vh;
+  width: 100vw;
+  height: 50vh;
   position: absolute;
   background-image: url(../images/plane4.png);
   background-repeat: no-repeat;
@@ -28,27 +28,12 @@ body {
   bottom: 0;
 }
 
-/*
-#buildings {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  background-image: url(../images/Building3.png);
-  background-repeat: repeat-x ;
-  background-position: center;
-  bottom: 0;
-  animation: building 20s linear infinite;
-}
-
-@keyframes building {
-  100% {
-    transform: translateX(-1000px);
-  }
-}
-*/
-
 button {
   position: relative;
+  padding: 6px 10px;
+  margin: 5px;
+  border-radius: 6px;
+  box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.6);
 }
 #man {
   width: 500px;
